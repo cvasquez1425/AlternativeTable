@@ -1,7 +1,7 @@
 ﻿//Simple Device Detection Code There are many methods to detect what kind of browser is running the method in your controller, ranging from very simple to very complex.You can even purchase a subscription to a service for device detection. In this article, you’re going to write a simple method to detect a mobile browser. I’ve found that this method works for most mobile browsers on the market today.
 
 //  You’re going to want to use this device detection method on many controllers, not just the Product controller you
-//  created in this sample.Create a controller base class from which all your controllers can inherit.
+//  created in this sample.Create a controller base class from which all your controllers can inherit. 
 //
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions;
