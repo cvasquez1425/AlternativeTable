@@ -1,0 +1,47 @@
+﻿@model AlternativeTable.Models.ProductViewModel
+@{
+    ViewBag.Title = "Products";
+}
+<h2>Products</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Introduction Date</th>
+                <th class="text-right">Price</th>
+                <th>URL</th>
+                <th class="text-center">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Product item in
+          Model.Products)
+            {
+                <tr>
+                    <td>
+                        <a href="#"
+                           title="Edit Product">
+                            @item.ProductName
+                        </a>
+                    </td>
+                    <td>
+                        @item.IntroductionDate.ToShortDateString()
+                    </td>
+                    <td class="text-right">
+                        @item.Price.ToString("c")
+                    </td>
+                    <td>@item.Url</td>
+                    <td class="text-center">
+                        <a href="#"
+                           title="Delete Product"
+                           class="btn btn-sm btn-default">
+                            <i class="glyphicon glyphicon-trash">
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

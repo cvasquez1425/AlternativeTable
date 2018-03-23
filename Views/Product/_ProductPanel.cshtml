@@ -1,0 +1,68 @@
+﻿@model AlternativeTable.Models.ProductViewModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@*The column width is modified depending on the size of the browser. For anything that’s a medium resolution and above, the col-md-3 class is used for the first column
+    and a col-md-9 for the second column.
+    As soon as a mobile device is detected, the col-xs-4 class is used for the first column and col-xs-8 for the second.
+    f you look at the Introduction Date field, you also notice
+    that the words used in the label change depending on the size of the browser. This is one of the great things about using Bootstrap:
+    the ability to hide and display things using simple CSS classes.*@
+<div>
+    @foreach (Product item in Model.Products)
+    {
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title">
+                    @item.ProductName
+                </h1>
+            </div>
+            <div class="panel-body">
+                @*//Display Product Data.*@
+                <div class="row">
+                    <div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+                        Intro Date
+                    </div>
+                    <div class="col-xs-4 col-md-3 hidden-xs">
+                        Introduction Date
+                    </div>
+                    <div class="col-xs-8 col-md-9">
+                        @item.IntroductionDate.ToShortDateString()
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-3">
+                        Price
+                    </div>
+                    <div class="col-xs-8 col-md-9">
+                        @item.Price.ToString("c")
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-md-3">
+                        URL
+                    </div>
+                    <div class="col-xs-8 col-md-9">
+                        @item.Url
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                @*//Display Action to Perform.*@
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" title="Edit Product"
+                           class="btn btn-sm btn-default">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </a>
+                        <a href="#" title="Delete Product"
+                           class="btn btn-sm btn-default">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

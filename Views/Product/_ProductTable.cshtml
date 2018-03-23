@@ -1,0 +1,36 @@
+﻿@model AlternativeTable.Models.ProductViewModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div>
+    <table class="table table-bordered table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>Product Information</th>
+                <th class="text-center">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Product item in Model.Products)
+            {
+                <tr>
+                    <td>
+                        <p>
+                            <a href="#" title="Edit Product">@item.ProductName</a>
+                        </p>
+                        <strong>Intro. Date: </strong>
+                        @item.IntroductionDate.ToShortDateString()<br />
+                        <strong>Price: </strong>
+                        @item.Price.ToString("c")<br />
+                        <strong>URL: </strong>@item.Url
+                    </td>
+                    <td class="text-center">
+                        <a href="#" title="Delete Product" class="btn btn-sm btn-default">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

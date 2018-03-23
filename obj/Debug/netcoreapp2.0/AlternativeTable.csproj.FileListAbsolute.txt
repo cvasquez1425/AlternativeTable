@@ -1,0 +1,11 @@
+C:\demos\AlternativeTable\AlternativeTable\bin\Debug\netcoreapp2.0\AlternativeTable.deps.json
+C:\demos\AlternativeTable\AlternativeTable\bin\Debug\netcoreapp2.0\AlternativeTable.runtimeconfig.json
+C:\demos\AlternativeTable\AlternativeTable\bin\Debug\netcoreapp2.0\AlternativeTable.runtimeconfig.dev.json
+C:\demos\AlternativeTable\AlternativeTable\bin\Debug\netcoreapp2.0\AlternativeTable.dll
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.csprojResolveAssemblyReference.cache
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.csproj.CoreCompileInputs.cache
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.AssemblyInfoInputs.cache
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.AssemblyInfo.cs
+C:\demos\AlternativeTable\AlternativeTable\bin\Debug\netcoreapp2.0\AlternativeTable.pdb
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.dll
+C:\demos\AlternativeTable\AlternativeTable\obj\Debug\netcoreapp2.0\AlternativeTable.pdb

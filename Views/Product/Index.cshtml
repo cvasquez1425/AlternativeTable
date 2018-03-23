@@ -1,0 +1,16 @@
+﻿@model AlternativeTable.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+
+@if (Model.IsMobileDevice)
+{
+    @Html.Partial("_ProductPanel", Model)
+}
+else
+{
+    @Html.Partial("_ProductTable", Model)
+}
